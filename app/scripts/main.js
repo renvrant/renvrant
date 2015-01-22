@@ -5,8 +5,9 @@ $(document).ready(function(){
 
 	function toggleActive(section) {
 		if($(section).offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+			var $link = $("a[href="+section+"]");
 			$("nav a").removeClass('active');
-			$("a[href="+section+"]").addClass('active'); 
+			$($link).addClass('active'); 		
 		} 
 	}
 
@@ -20,8 +21,6 @@ $(document).ready(function(){
 	    toggleActive('#about');
 	    toggleActive('#work');
 	    toggleActive('#contact');
-	    
-
 	});
 
 	$('.mobile-toggle').click(function() {
