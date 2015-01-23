@@ -326,10 +326,12 @@ ul.social-links {
   hr {
     background: $accent;
   }
+  .misc-sites ul {
+    list-style: none;
+  }
   @include desktop {
     .misc-sites {
       ul {
-        list-style: none;
         text-align: right;
         float: right;
       }
@@ -355,6 +357,9 @@ ul.social-links {
     margin: 0;
     img {
       max-width: 100%;
+      @media screen and (max-width: 400px){
+        width: 100%;
+      }
     }
   }
  
