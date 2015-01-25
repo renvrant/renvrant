@@ -1,7 +1,5 @@
-// bower:scss
-// endbower
 
-// colores
+// colors
 $copy: #7f7676;
 $color2: #e8f380;
 $accent: #CA4948;
@@ -64,10 +62,7 @@ a {
     transition: border-color .2s ease-in-out;
   }
 }
-.accent {
-  color: $accent;
-}
-// Page Style
+
 * {
   box-sizing: border-box;
 }
@@ -208,7 +203,7 @@ nav {
   }
 }
 
-
+//Header
 .hero {
   position: relative;
   background: #000 url('../images/background2.png') no-repeat center center fixed;
@@ -252,6 +247,8 @@ nav {
     letter-spacing: 2px;
   }
 }
+
+//Body
 
 ul.social-links {
   float: right;
