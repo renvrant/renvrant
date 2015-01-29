@@ -1,12 +1,18 @@
-/* jshint devel:true */
-console.log('Curious, eh? My email is renee@renvrant.com, just to remind you.');
-
-$(document).ready(function(){
+(function ($, root, undefined) {
+	'use strict';
+$(function () {
+	
+	if (typeof console === 'undefined') {
+	    window.console = {
+	        log: function () {}
+	    };
+	}
+	console.log('Curious, eh? My email is renee@renvrant.com, just to remind you.');
 
 	function toggleActive(section) {
 		if($(section).offset().top < $(window).scrollTop() + $(window).outerHeight()) {
-			var $link = $("a[href="+section+"]");
-			$("nav a").removeClass('active');
+			var $link = $('a[href='+section+']');
+			$('nav a').removeClass('active');
 			$($link).addClass('active'); 		
 		} 
 	}
@@ -40,7 +46,7 @@ $(document).ready(function(){
 
 	// Navigation Scroll - ljepo radi materem
 	$('nav a').click(function(event) {
-	    var id = $(this).attr("href");
+	    var id = $(this).attr('href');
 	    var offset = 70;
 	    var target = $(id).offset().top - offset;
 	    $('html, body').animate({
@@ -48,5 +54,6 @@ $(document).ready(function(){
 	    }, 500);
 	    event.preventDefault();
 	});
-
 });
+	
+})(jQuery, this);
