@@ -54,6 +54,12 @@ $(function () {
 	    }, 500);
 	    event.preventDefault();
 	});
+
+	$('.hero').mousemove(function(e){
+	    var amountMovedX = (e.pageX * -1 / 25);
+	    var amountMovedY = (e.pageY * -1 / 25);
+	    $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+	});
 });
 	
 })(jQuery, this);
