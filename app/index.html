@@ -72,31 +72,34 @@
             </li>
         </ul>
 
-        <h2>Hello world</h2>
-          
+        <h2 class="header-border">Hello world</h2> 
+
         <p>Hey there! I'm Renee, and like the title says, I'm a web developer. I've been in the industry for a couple of years now, but I made my first website back when midis and &ldquo;under construction&rdquo; gifs were really, really cool.</p>
         <p>I graduated from the New Media program at the University of Toronto/Centennial College, but like many developers, I've learned a lot from exploration. I'm interested in learning more about Angular, Ember and other JS frameworks.</p>
         <p>I'm also passionate about video games, and I love a captive audience. I've spoken about games, narrative, and designing for both at <a href="http://www.longstorygame.com/post/78854753270/our-sxsw-14-panel-building-empathic-games-for" target="_blank">SXSW</a>, <a href="https://bentomiso.com/" target="_blank">Bento Miso</a> and <a href="http://gamercamp.ca/2014/conference/" target="_blank">Gamercamp</a>.</p>
     </section>
 
     <section id="knowledge">
-        <div class="row flex-row">
-            <div>
+        <div class="accent-bg">
+            <div class="row">
                 <h2>Things I know</h2>
                 <ul>
-                    <li>HTML5/CSS/JS</li>
-                    <li>jQuery</li>
+                    <li>HTML5/CSS</li>
+                    <li>jQuery/JavaScript</li>
                     <li>SASS/LESS</li>
                     <li>PHP</li>
                     <li>WordPress</li>
                     <li>Laravel</li>
                     <li>WCAG</li>
                     <li>MVC</li>
+                    <li>GreenSock</li>
                     <li>Bootstrap</li>
-                    <li>IE8+ Testing</li>
+                    <li>IE8+ Testing</li> 
                 </ul>
             </div>
-            <div>
+        </div>
+        <div class="black-bg">
+            <div class="row">
                 <h2>Tools I use</h2>
                 <ul>
                     <li>Sublime</li>
@@ -105,6 +108,7 @@
                     <li>Git</li>
                     <li>Gulp</li>
                     <li>Bower</li>
+                    <li>NPM</li>
                     <li>Yeoman</li>
                     <li>Photoshop</li>
                 </ul>
@@ -114,11 +118,21 @@
 
     <section id="work">
     <div class="row">
-        <h2>Work</h2>
-        <hr>
+        <h2 class="header-border">Work</h2>
+
+        <h3>NiftyFish</h3>
+        <div class="project-full">
+            <figure><img src="images/niftyfish.jpg" alt="Screenshot of the NiftyFish tank"></figure>
+            <div class="desc">
+                 <p>This multi-screen interactive app was designed for the showroom floor. Visitors could whip out their smartphones, head to niftyfish.ca, and customize their own "frankenfish" using pre-drawn art. When they finished, they flicked the fish off the top of their screen and watched it dive into the NiftyFish digital tank and swim with fish other users had made.</p>
+                 <p>Pusherapp managed the socket connection between the tank and whatever device it was accessed on, and I used the Greensock Animation Framework to get the fish swimming, diving and flicking.</p>
+                <p><a class="live-link" href="http://niftyfish.ca" target="_blank">niftyfish.ca</a> / <a class="live-link" href="http://tank.niftyfish.ca" target="_blank">tank.niftyfish.ca</a></p>
+            </div>
+        </div>
+
         <h3>Danier Stylenotes</h3>
         <div class="project">
-            <figure><img src="images/thumb_danier.jpg"></figure>
+            <figure><img src="images/thumb_danier.jpg" alt="Screenshot of Danier Stylenotes"></figure>
             <div class="desc">
                 <p>This simple blog theme came with a pack of shortcodes to make sure every post had a flexible magazine-style layout. A seasonal-only gift section lazyloaded product images into a masonry grid, with titles and links visible on mouseover.</p>
                 <p><a class="live-link" href="http://stylenotes.danier.com" target="_blank">stylenotes.danier.com</a></p>
@@ -127,7 +141,7 @@
         
         <h3>RealSocial</h3>
         <div class="project">
-            <figure><img src="images/thumb_realsocial.jpg"></figure>
+            <figure><img src="images/thumb_realsocial.jpg" alt="Screenshot of RealSocial.tv"></figure>
             <div class="desc">
                 <p>SnapSVG makes the RealSocial logo springy, and the demo page integrates the Instagram API and uses 3D transforms to show off how this Art &amp; Science product might really look in situ.</p>
                 <p><a class="live-link" href="http://www.realsocial.tv/demo.php#puppies" target="_blank">realsocial.tv</a></p>
@@ -136,7 +150,7 @@
 
         <h3>Juno Beach Centre</h3>
         <div class="project">
-            <figure><img src="images/thumb_juno.jpg"></figure>
+            <figure><img src="images/thumb_juno.jpg" alt="Screenshot of Juno Beach website"></figure>
             <div class="desc">
                 <p>This bilingual, responsive site for the Juno Beach Centre required importing a lot of legacy data into WordPress and building a custom search feature around it.</p>
                 <p><a class="live-link" href="http://www.junobeach.org" target="_blank">junobeach.org</a></p>
@@ -145,25 +159,17 @@
 
         <h3>Owlkids</h3>
         <div class="project">
-            <figure><img src="images/thumb_owl.jpg"></figure>
+            <figure><img src="images/thumb_owl.jpg" alt="Screenshot of owlkids.com"></figure>
             <div class="desc">
                 <p>I was the lead developer on this responsive project, which involved amalgamating three blogs into one marketing site, and giving each a distinct look and feel.</p>
                 <p><a class="live-link" href="http://www.owlkids.com" target="_blank">owlkids.com</a></p>
             </div>
         </div>
 
-        <h3>AIMIA | AGO Photography Prize</h3>
-        <div class="project">
-            <figure><img src="images/thumb_ago.jpg"></figure>
-            <div class="desc">
-                <p>I created the styles and Laravel views for this responsive, bilingual site. Social integration allows you to share a slide of an artist's artwork directly to Facebook or Pinterest.</p>
-                <p><a class="live-link" href="http://www.owlkids.com" target="_blank">aimiaagophotographyprize.com</a></p>
-            </div>
-        </div>
-        
         <div class="misc-sites">
             <h3>Other sites I've worked on</h3>
             <ul>
+                <li><a class="live-link" href="http://www.aimiaagophotographyprize.com" target="_blank">AIMIA | AGO Photography Prize</a></li>
                 <li><a class="live-link" href="http://yournextkitchen.com/create-your-style-board/" target="_blank">Panasonic's Your Next Kitchen</a></li>
                 <li><a class="live-link" href="http://www.tiff.net" target="_blank">TIFF Film Invitations</a></li>
                 <li><a class="live-link" href="http://www.medalliondevelopments.com" target="_blank">Medallion Developments</a></li>
@@ -173,9 +179,9 @@
     </div>
     </section>
 
-    <footer id="contact">
+    <footer id="contact" class="black-bg">
         <div class="row">
-            <h2>See you, space cowboy</h2>
+            <h2 class="header-border">See you, space cowboy</h2>
             <p>Want to get in touch? Drop me a line at <a href="mailto:renee@renvrant.com">renee@renvrant.com</a>, and thanks for stopping by.</p>
 
             <ul class="social-links">

@@ -46,6 +46,10 @@ h1, h2, h3, h4, h5, h6, .live-link, nav {
   margin: 0;
 }
 
+h2 {
+  color: #000;
+}
+
 ul {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -98,6 +102,7 @@ hr {
   border: 0;
   height: 5px;
   margin: 1em 0;
+  background: black;
 }
 
 // Navigation
@@ -241,6 +246,7 @@ nav {
     }
   }
   h2 {
+    color: white;
     margin-top: .25em;
     @include phablet {
       margin-top: .5em;
@@ -256,7 +262,7 @@ nav {
 
 ul.social-links {
   float: right;
-  padding: 20px 0;
+  padding: 5px 0 20px;
   list-style: none;
   li {
     display: inline-block;
@@ -274,16 +280,49 @@ ul.social-links {
   }
 }
 
-#about{
-  h2 {
-    font-size: 1.75em;
-    color: $accent;
-  }
+.header-border {
+  border-bottom: 5px solid $accent;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
 
-  hr {
-    background: $copy;
-    margin: 50px 0;
+.accent-bg {
+  padding: 45px 0;
+  color: #fff;
+  background: $accent;
+
+  h2 {
+    color: #000;
+    &.header-border {
+      border-color: #FFF;
+    }
   }
+}
+
+.black-bg {
+  padding: 45px 0;
+  background: #000;
+  color: #fff;
+
+  h2 {
+    color: #FFF;
+    &.header-border {
+      border-color: $accent;
+    }
+  }
+}
+
+figure {
+  margin: 0;
+  img {
+    max-width: 100%;
+    @media screen and (max-width: 400px){
+      width: 100%;
+    }
+  }
+}
+
+#about{
   a:hover, a:focus {
     border-color: #000;
   }
@@ -294,22 +333,18 @@ ul.social-links {
   }
 }
 
-#knowledge {
-  
-  color: #fff;
-  background: $accent;
-
-  h2 {
-    color: #000;
+#knowledge {  
+  padding: 0;
+  hr {
     line-height: 1.2em;
+    font-size: 1em;
   }
-  
   ul {
     line-height: 1.5em;
-    margin: 1em 0;
+    margin: 1em 0 0;
     list-style: none;
     @include desktop {
-      columns: 2;
+      columns: 3;
     }
   }
   @include desktop{
@@ -322,14 +357,18 @@ ul.social-links {
 }
 
 #work {
-  background: #000;
-  color: #fff;
-
-  hr {
-    background: $accent;
-  }
   .misc-sites ul {
     list-style: none;
+  }
+  h3 {
+    color: $accent;
+  }
+  .live-link {
+    color: #000;
+    &:hover, &:focus {
+      border-bottom: 2px solid $accent;
+      transition: border-color .2s ease-in-out;
+    }
   }
   @include desktop {
     .misc-sites {
@@ -352,18 +391,12 @@ ul.social-links {
   }
 }
 
+.project-full {
+  margin: 20px 0 60px;
+}
+
 .project {
   margin: 20px 0 60px;
-  
-  figure {
-    margin: 0;
-    img {
-      max-width: 100%;
-      @media screen and (max-width: 400px){
-        width: 100%;
-      }
-    }
-  }
  
   @include desktop{
     display: flex;
@@ -402,9 +435,6 @@ ul.social-links {
 }
 
 #contact {
-  h2 {
-    color: $accent;
-  }
   .social-links {
     float: none;
     margin: 0 auto;
