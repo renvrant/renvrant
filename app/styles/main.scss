@@ -134,6 +134,7 @@ nav {
   }
 
   ul {
+    margin: 0;
     list-style: none;
     overflow: hidden;
    text-align:center;
@@ -166,6 +167,7 @@ nav {
       }
       &.active {
         color: #000;
+        text-decoration: none;
       }
     }
   }
@@ -207,16 +209,18 @@ nav {
 .hero {
   position: relative;
   background: #000 url('../images/background2.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
   color: #fafafa;
   height: auto;
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  @include desktop {
+    background-size: 110% auto;
+  }
   
   .self-portrait {
     border-radius: 50%;
