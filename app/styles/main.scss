@@ -1,7 +1,7 @@
 
 // colors
 $copy: #7f7676;
-$color2: #e8f380;
+$maincolor: #e8f380;
 $accent: #CA4948;
 
 
@@ -15,7 +15,6 @@ $accent: #CA4948;
     @content;
   }
 }
-
 
 .browsehappy {
   margin: 0.2em 0;
@@ -264,6 +263,7 @@ ul.social-links {
   float: right;
   padding: 5px 0 20px;
   list-style: none;
+  margin: 0;
   li {
     display: inline-block;
      a {
@@ -322,7 +322,7 @@ figure {
   }
 }
 
-#about{
+.about{
   a:hover, a:focus {
     border-color: #000;
   }
@@ -333,7 +333,7 @@ figure {
   }
 }
 
-#knowledge {  
+.knowledge {  
   padding: 0;
   hr {
     line-height: 1.2em;
@@ -356,7 +356,7 @@ figure {
   }
 }
 
-#work {
+.work {
   .misc-sites ul {
     list-style: none;
   }
@@ -396,13 +396,15 @@ figure {
 }
 
 .project {
-  margin: 20px 0 60px;
+  margin: 20px 0 30px;
+  padding-bottom: 30px;
  
   @include desktop{
     display: flex;
     figure {
       flex: 2;
       margin: 0;
+      min-width: 0;
     }
     .desc {
       flex: 1;
@@ -416,6 +418,7 @@ figure {
       figure {
         order: 1;
         margin-right: 40px;
+
       }
       .desc {
         order: 2;
@@ -434,7 +437,11 @@ figure {
   }
 }
 
-#contact {
+.project, .project-full {
+  border-bottom: 3px solid $accent;
+}
+
+.contact {
   .social-links {
     float: none;
     margin: 0 auto;
